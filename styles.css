@@ -1,0 +1,37 @@
+html { font-size: 14px; }
+@media (min-width: 576px) { html { font-size: 15px; } }
+@media (min-width: 768px) { html { font-size: 16px; } }
+@media (min-width: 992px) { html { font-size: 18px; } }
+@media (min-width: 1200px) { html { font-size: 24px; } }
+
+body { background-color: #FCFAFF; } /* slight purple hue */
+
+section { padding: 2rem 0;}
+
+
+
+/* Hero header */
+
+.hero {
+  height: 12rem;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #84007b; /* fallback for linear-gradient */
+  background: linear-gradient(to bottom, #580060 0%, #32276D 100%);
+  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+
+
+.hero__title { display: block; font-size: 1.4em; }
+.hero__subtitle { display: block; font-size: .5em; }
+
+
+/* Restaurant list */
+
+.restaurant { margin-bottom: 1rem; }
+.restaurant__image { }
+.restaurant__price { text-align: right; font-size: 1.2em; }
+.restaurant__price::after { content: '/pers'; font-size: .8em; opacity: .8; }
