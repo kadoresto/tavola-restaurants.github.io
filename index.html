@@ -27,64 +27,102 @@
 <body class="container-fluid">
 
   <section class="hero row">
-    <h1>
-      <span class="hero__title">Tavola</span>
-      <span class="hero__subtitle">restaurants à offrir</span>
+
+    <nav class="col-12 hero__nav navbar" hidden>
+      Qu'est-ce que c'est ?
+    </nav>
+
+    <h1 class="col-12 hero__heading">
+      <span class="hero__heading__title">Tavola</span>
+      <span class="hero__heading__subtitle">restaurants à offrir</span>
     </h1>
-  </section>
 
   </section>
 
-  <section class="restaurants row">
+  </section>
 
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="restaurant card">
-        <img class="restaurant__image card-img-top img-fluid" src="restaurant1.jpg" alt="Restaurant 1">
-        <div class="card-block">
-          <h4 class="card-title">Le Café des Amis</h4>
-          <p class="card-text">Toujours plein d'activité, le Café des Amis propose une cuisine simple et saine.</p>
-          <p>
-            <span class="badge badge-default">Méditéranéen</span>
-            <span class="badge badge-default">Végétarien</span>
-          </p>
-          <div class="restaurant__price">30€</div>
-        </div>
+  <section class="restaurants row flex-row flex-nowrap dragscroll horizontal-scroll">
+
+    <div class="restaurant card">
+      <img class="restaurant__image card-img-top img-fluid" src="restaurant1.jpg" alt="Restaurant 1">
+      <div class="card-block">
+        <h4 class="card-title">Le Café des Amis</h4>
+        <p class="card-text">Toujours plein d'activité, le Café des Amis propose une cuisine simple et saine.</p>
+        <p>
+          <span class="badge badge-default">Méditéranéen</span>
+          <span class="badge badge-default">Végétarien</span>
+        </p>
+        <div class="restaurant__price">30€</div>
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="restaurant card">
-        <img class="restaurant__image card-img-top img-fluid" src="restaurant2.jpg" alt="Restaurant 2">
-        <div class="card-block">
-          <h4 class="card-title">Bols à partager</h4>
-          <p class="card-text">Egoïstes malvenus ! Ici, on ne garde rien pour soi. Une cuisine d'inspiration mexicaine, délicieuse et surprenante !</p>
-          <p>
-            <span class="badge badge-default">Méxicain</span>
-            <span class="badge badge-default">Insolite</span>
-          </p>
-          <div class="restaurant__price">40€</div>
-        </div>
+    <div class="restaurant card">
+      <img class="restaurant__image card-img-top img-fluid" src="restaurant2.jpg" alt="Restaurant 2">
+      <div class="card-block">
+        <h4 class="card-title">Bols à partager</h4>
+        <p class="card-text">Egoïstes malvenus ! Ici, on ne garde rien pour soi. Une cuisine d'inspiration indienne, délicieuse et surprenante !</p>
+        <p>
+          <span class="badge badge-default">Indien</span>
+          <span class="badge badge-default">Insolite</span>
+        </p>
+        <div class="restaurant__price">40€</div>
       </div>
     </div>
 
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="restaurant card">
-        <img class="restaurant__image card-img-top img-fluid" src="restaurant3.jpg" alt="Restaurant 3">
-        <div class="card-block">
-          <h4 class="card-title">Le comptoir de Régis</h4>
-          <p class="card-text">Régis réalise lui-même chaque burger, et la carte change tous les jours, selon les arrivages du marché !</p>
-          <p>
-            <span class="badge badge-default">Burgers</span>
-            <span class="badge badge-default">Bistrot</span>
-          </p>
-          <div class="restaurant__price">30€</div>
-        </div>
+    <div class="restaurant card">
+      <img class="restaurant__image card-img-top img-fluid" src="restaurant3.jpg" alt="Restaurant 3">
+      <div class="card-block">
+        <h4 class="card-title">Le comptoir de Régis</h4>
+        <p class="card-text">Régis réalise lui-même chaque burger, et la carte change tous les jours, selon les arrivages du marché !</p>
+        <p>
+          <span class="badge badge-default">Burgers</span>
+          <span class="badge badge-default">Bistrot</span>
+        </p>
+        <div class="restaurant__price">30€</div>
       </div>
     </div>
-
-
 
   </section>
+
+  <section class="row">
+    <h2 class="col-12 section__heading">
+      <div class="section__title">Qu'est-ce que c'est ?</div>
+    </h2>
+    <div class="col-12 section__text text-center">
+      <p>Tavola vous permet d'offrir à vos proches un dîner au restaurant.</p>
+      <p>Le service sera lancé à l'automne, lorsque nous aurons suffisament de restaurants à vous proposer. D'ici-là, tenez-vous au courant !</p>
+      <p>
+        <form class="form-inline" id="newsletterForm">
+          <input type="text" class="form-control" style="width: 78%; margin-right: 2%;" id="newsletterEmailField" placeholder="Email">
+          <button type="submit" class="btn btn-primary" style="width: 20%;">Envoyer</button>
+        </form>
+        <span class="form-confirmation alert alert-success"><i class="fa fa-check"></i> Votre adresse a bien été enregistrée, merci !</span>
+      </p>
+      <p>Ou sur Twitter & Facebook :</p>
+      <p>
+        <a class="btn btn-sm btn-primary" target="_blank" href="http://twitter.com/TavolaFR">
+          <i class="fa fa-lg fa-twitter"></i>
+        </a>
+        <a class="btn btn-sm btn-primary" target="_blank" href="https://www.facebook.com/Tavola-157219294823377/">
+          <i class="fa fa-lg fa-facebook"></i>
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="row">
+    <h2 class="col-12 section__heading">
+      <div class="section__title">Restaurateur, restauratrice ?</div>
+      <div class="section__subtitle">Participez à notre enquête !</div>
+    </h2>
+    <div class="col-12 text-center">
+      <a class="btn btn-sm btn-secondary" href="https://airtable.com/shrhPgj8jtqIPuw2f" target="_blank">Répondre en moins de 5 minutes</a>
+    </div>
+  </section>
+
+  <section class="row">
+  </section>
+
 
 </body>
 
@@ -97,6 +135,29 @@
 
 <!-- bootstrap 4 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+<!-- dragscroll -->
+<script src="http://asvd.github.io/jailed/demos/web/process/dragscroll.js"></script>
+
+<!-- axios for form processing -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+
+<!-- form processing with airtable -->
+<script>
+var newsletterForm = document.querySelector("#newsletterForm")
+var newsletterEmailField = document.querySelector("#newsletterEmailField")
+var api_key = 'keyiXWAznJ80FX'
+
+// Handle form submit
+newsletterForm.addEventListener("submit", function(event) {
+  event.preventDefault()
+  axios.post('https://api.airtable.com/v0/appCFLZH7zvAoTdY5/Newsletter?api_key=' + api_key + 'mtW', {
+    "fields": {
+      "Email": newsletterEmailField.value
+    }
+  }).then(newsletterForm.classList.add('success'))
+})
+</script>
 
 <!-- non-critical css -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

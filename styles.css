@@ -1,37 +1,69 @@
+/* General structure */
+
 html { font-size: 14px; }
 @media (min-width: 576px) { html { font-size: 15px; } }
 @media (min-width: 768px) { html { font-size: 16px; } }
 @media (min-width: 992px) { html { font-size: 18px; } }
 @media (min-width: 1200px) { html { font-size: 24px; } }
 
-body { background-color: #FCFAFF; } /* slight purple hue */
+body { background-color: #FAF8FF; } /* slight purple hue */
 
-section { padding: 2rem 0;}
+section { padding: 2rem 0; border-bottom: 2px dashed #eee; border-top: 2px dashed #eee; }
+
+section:first-child { border: none; }
+section:nth-child(2) { border-top: none; }
+
+section:nth-child(odd) { background-color: #FEFCFF; }
+
+.section__heading { text-align: center; margin-bottom: 1rem; }
+	.section__title { font-size: 2rem; }
+	.section__subtitle { font-size: 1rem; }
+
+.section__text { max-width: 32rem; margin: auto; }
+
+
+
+/* Utilities */
+
+.horizontal-scroll { overflow-x: auto; }
 
 
 
 /* Hero header */
 
 .hero {
-  height: 12rem;
   color: white;
   text-transform: uppercase;
-  text-align: center;
   background-color: #84007b; /* fallback for linear-gradient */
   background: linear-gradient(to bottom, #580060 0%, #32276D 100%);
   font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
   display: flex; flex-direction: column; justify-content: center;
 }
 
+.hero__heading { height: 5.5rem; text-align: center; }
+.hero__heading__title { display: block; font-size: 1.4em; }
+.hero__heading__subtitle { display: block; font-size: .5em; }
 
-
-.hero__title { display: block; font-size: 1.4em; }
-.hero__subtitle { display: block; font-size: .5em; }
 
 
 /* Restaurant list */
 
-.restaurant { margin-bottom: 1rem; }
+.restaurants { padding: .5rem; cursor: move; cursor: -webkit-grab; }
+.restaurant {
+	margin: .5rem;
+	min-width: 14rem; max-width: 70vw;
+	position: relative;
+	padding-bottom: 1.25rem; /* balancing the restaurant__price */
+}
+
 .restaurant__image { }
-.restaurant__price { text-align: right; font-size: 1.2em; }
+.restaurant__price { text-align: right; font-size: 1.2em; position: absolute; bottom: 1.25rem; right: 1.25rem; }
 .restaurant__price::after { content: '/pers'; font-size: .8em; opacity: .8; }
+
+
+
+/* Newsletter Form */
+
+#newsletterForm.success { display: none; }
+.form-confirmation { display: none; }
+#newsletterForm.success + .form-confirmation { display: block; }
