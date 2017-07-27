@@ -21,6 +21,13 @@ section:nth-child(odd) { background-color: #FEFCFF; }
 
 .section__text { max-width: 32rem; margin: auto; }
 
+.btn-primary {
+	border: none;
+	background-color: #451366; /* fallback for linear-gradient */
+	background: linear-gradient(to bottom, #580060 0%, #32276D 100%);
+}
+
+
 
 
 /* Utilities */
@@ -34,7 +41,7 @@ section:nth-child(odd) { background-color: #FEFCFF; }
 .hero {
   color: white;
   text-transform: uppercase;
-  background-color: #84007b; /* fallback for linear-gradient */
+  background-color: #451366; /* fallback for linear-gradient */
   background: linear-gradient(to bottom, #580060 0%, #32276D 100%);
   font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
   display: flex; flex-direction: column; justify-content: center;
@@ -48,7 +55,7 @@ section:nth-child(odd) { background-color: #FEFCFF; }
 
 /* Restaurant list */
 
-.restaurants { padding: .5rem; cursor: move; cursor: -webkit-grab; }
+.restaurants { padding: .5rem; /*cursor: move; cursor: -webkit-grab;*/ }
 .restaurant {
 	margin: .5rem;
 	min-width: 14rem; max-width: 70vw;
@@ -56,10 +63,13 @@ section:nth-child(odd) { background-color: #FEFCFF; }
 	padding-bottom: 1.25rem; /* balancing the restaurant__price */
 }
 
-.restaurant__image { }
+.restaurant:hover { cursor: pointer; box-shadow: 0 0 .5rem 5px rgba(0,0,0,.25); }
+
 .restaurant__price { text-align: right; font-size: 1.2em; position: absolute; bottom: 1.25rem; right: 1.25rem; }
 .restaurant__price::after { content: '/pers'; font-size: .8em; opacity: .8; }
 
+.offer-link { text-decoration: none !important; color: inherit; }
+.offer-link:hover { color: #451366; }
 
 
 /* Newsletter Form */
