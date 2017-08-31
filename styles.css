@@ -72,6 +72,25 @@ section:nth-child(odd) { background-color: #FEFCFF; }
 .offer-link:hover { color: #451366; }
 
 
+/* How does it work */
+
+.triplet { padding: .5rem; margin: -1rem 0; }
+
+.triplet-item {
+	text-align: center;
+	margin: .5rem;
+	min-width: 14rem;
+	max-width: 70vw;
+	background-color: #FAF8FF;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	padding: 1.25rem;
+}
+.triplet-item__image {  }
+.triplet-item__title { font-size: 1.35rem; margin-top: 1rem; margin-bottom: .2rem; }
+.triplet-item__body { padding: 0 1rem; }
+
+
 /* Newsletter Form */
 
 #newsletterForm.success { display: none; }
